@@ -1,17 +1,17 @@
 public class ElectricCar implements Car {
-    private String carType;
+    private String carBrand;
     private String carColor;
     private int carSeatNumber;
 
     public ElectricCar(String carType, String carColor, int carSeatNumber) {
-        this.carType = carType;
+        this.carBrand = carType;
         this.carColor = carColor;
         this.carSeatNumber = carSeatNumber;
     }
 
     @Override
     public String getCarType() {
-        return this.carType;
+        return this.carBrand;
     }
 
     @Override

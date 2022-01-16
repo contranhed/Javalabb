@@ -1,17 +1,17 @@
 public class HybridCar implements Car {
-    private String carType;
+    private String carBrand;
     private String carColor;
     private int carSeatNumber;
 
     public HybridCar(String carType, String carColor, int carSeatNumber) {
-        this.carType = carType;
+        this.carBrand = carType;
         this.carColor = carColor;
         this.carSeatNumber = carSeatNumber;
     }
 
     @Override
     public String getCarType() {
-        return this.carType;
+        return this.carBrand;
     }
 
     @Override
