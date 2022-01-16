@@ -7,8 +7,8 @@ public class Main {
         showMenu();
     }
 
-    private static void greeting() {
-        System.out.println("Welcome to build your own car!");
+    public static void greeting() {
+        System.out.println("Welcome to *** Build Your Own Car ***!");
     }
 
     private static void showMenu() {
@@ -17,9 +17,10 @@ public class Main {
         ConsoleUI ui = new ConsoleUI();
         Scanner scan = new Scanner(System.in);
 
-        System.out.printf("Press 1 to build an electric car %nPress 2 to build a gas car %nPress 3 to build a hybrid car%n");
-
         while(proceed) {
+            System.out.println("");
+            System.out.println("Make a choice:");
+            System.out.printf("Press 1 to build an electric car %nPress 2 to build a gas car %nPress 3 to build a hybrid car %nPress 4 to exit%n");
             choice = scan.nextInt();
 
             switch(choice) {
@@ -35,11 +36,15 @@ public class Main {
                     Car hybrid = CarFactory.buildCar(CarType.HYBRIDCAR, ui.inputCarBrand(), ui.inputCarColor(), ui.inputNumCarSeats());
                     System.out.println(hybrid.toString());
                     break;
+                case 4:
+                    proceed = false;
+                    System.out.println("Thanks for the visit!");
+                    break;
                 default:
-                    System.out.println("Not a valid number: try 1, 2 or 3 again");
+                    System.out.println("");
+                    System.out.println("Error: Not a valid number. Try 1, 2, 3 or 4 again");
                     break;
             }
-
         }
     }
 }

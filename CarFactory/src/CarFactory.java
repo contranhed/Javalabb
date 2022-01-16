@@ -3,7 +3,7 @@ public class CarFactory {
     public static Car buildCar(CarType carType, String carBrand, String carColor, int carSeatNumber) {
         Car newCar = null;
 
-        switch (carType) {
+       switch (carType) {
             case ELECTRIC:
                 newCar = new ElectricCar(carBrand, carColor, carSeatNumber);
                 break;

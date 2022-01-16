@@ -3,14 +3,14 @@ public class ElectricCar implements Car {
     private String carColor;
     private int carSeatNumber;
 
-    public ElectricCar(String carType, String carColor, int carSeatNumber) {
-        this.carBrand = carType;
+    public ElectricCar(String carBrand, String carColor, int carSeatNumber) {
+        this.carBrand = carBrand;
         this.carColor = carColor;
         this.carSeatNumber = carSeatNumber;
     }
 
     @Override
-    public String getCarType() {
+    public String getCarBrand() {
         return this.carBrand;
     }
 
@@ -27,9 +27,9 @@ public class ElectricCar implements Car {
     @Override
     public String toString() {
         return "Congratulations! You have ordered an ElectricCar with these details: {" +
-                "carBrand='" + carBrand + '\'' +
-                ", carColor='" + carColor + '\'' +
-                ", carSeatNumber=" + carSeatNumber +
+                "carBrand='" + this.carBrand + '\'' +
+                ", carColor='" + this.carColor + '\'' +
+                ", carSeatNumber=" + this.carSeatNumber +
                 '}';
     }
 }
