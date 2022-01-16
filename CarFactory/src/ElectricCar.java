@@ -26,6 +26,10 @@ public class ElectricCar implements Car {
 
     @Override
     public String toString() {
-        return "Congratulations on ordering an electric car!";
+        return "Congratulations! You have ordered an ElectricCar with these details: {" +
+                "carBrand='" + carBrand + '\'' +
+                ", carColor='" + carColor + '\'' +
+                ", carSeatNumber=" + carSeatNumber +
+                '}';
     }
 }

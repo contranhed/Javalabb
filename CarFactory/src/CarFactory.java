@@ -1,6 +1,6 @@
 public class CarFactory {
 
-    public static Car createCar(CarType carType, String carBrand, String carColor, int carSeatNumber) {
+    public static Car buildCar(CarType carType, String carBrand, String carColor, int carSeatNumber) {
         Car newCar = null;
 
         switch (carType) {
@@ -12,6 +12,10 @@ public class CarFactory {
                 break;
             case HYBRIDCAR:
                 newCar = new HybridCar(carBrand, carColor, carSeatNumber);
+                break;
+            default:
+                System.out.println("We know it is hard, but you have to choose");
+                break;
         }
          return newCar;
     }

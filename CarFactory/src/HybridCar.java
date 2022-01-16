@@ -24,10 +24,12 @@ public class HybridCar implements Car {
         return this.carSeatNumber;
     }
 
-
-
     @Override
     public String toString() {
-        return "Thanks for ordering a Hybrid Car!";
+        return "Congratulations! You have ordered a hybridCar with the following details: {" +
+                "carBrand='" + carBrand + '\'' +
+                ", carColor='" + carColor + '\'' +
+                ", carSeatNumber=" + carSeatNumber +
+                '}';
     }
 }

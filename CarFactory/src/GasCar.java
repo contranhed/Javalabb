@@ -27,6 +27,10 @@ public class GasCar implements Car {
 
     @Override
     public String toString() {
-        return "Thanks for ordering yet another gas car - just what we need...";
+        return "Congratulations! You have ordered a gasCar with the following details: {" +
+                "carBrand='" + carBrand + '\'' +
+                ", carColor='" + carColor + '\'' +
+                ", carSeatNumber=" + carSeatNumber +
+                '}';
     }
 }
