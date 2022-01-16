@@ -23,11 +23,8 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                ", gender='" + gender + '\'' +
-                '}';
+        return String.format("\nName: %-2s\n Gender: %-2s\n Salary: %2f\n",
+                getName(), getGender(), getSalary());
     }
 }
 
