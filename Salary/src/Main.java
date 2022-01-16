@@ -1,11 +1,14 @@
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
         List<Person> persons = listOfPersons();
-        System.out.println(persons);
+
+        // Print out average salary for males and females, respectively.
+        Map<String, Double> averageSalaryGenderBased = persons.stream()
+                .collect(Collectors.groupingBy(Person::getGender, Collectors.averagingDouble(Person::getSalary)));
+        System.out.println("The average salary based on gender: " + averageSalaryGenderBased);
 
         // Find and print the name of best paid person
         Optional<String> bestPaid = persons.stream()
