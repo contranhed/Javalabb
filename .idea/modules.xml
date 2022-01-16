@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarFactory/CarFactory.iml" filepath="$PROJECT_DIR$/CarFactory/CarFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Javalabb.iml" filepath="$PROJECT_DIR$/.idea/Javalabb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Salary/Salary.iml" filepath="$PROJECT_DIR$/Salary/Salary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Words/Words.iml" filepath="$PROJECT_DIR$/Words/Words.iml" />
+    </modules>
+  </component>
+</project>
