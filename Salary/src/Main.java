@@ -13,6 +13,13 @@ public class Main {
                 .map(Person::getName);
         System.out.println("The best paid person is:");
         bestPaid.ifPresent(System.out::println);
+
+        // Find and print the name of crappiest paid person
+        Optional<String> crappiestPaid = persons.stream()
+                .min(Comparator.comparing(Person::getSalary))
+                .map(Person::getName);
+        System.out.println("The crappiest paid person is:");
+        crappiestPaid.ifPresent(System.out::println);
     }
 
     private static List<Person> listOfPersons() {
