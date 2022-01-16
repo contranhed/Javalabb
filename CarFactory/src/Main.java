@@ -29,11 +29,11 @@ public class Main {
                     System.out.println(electric.toString());
                     break;
                 case 2:
-                    Car gas = CarFactory.buildCar(CarType.GASCAR, ui.inputCarBrand(), ui.inputCarColor(), ui.inputNumCarSeats());
+                    Car gas = CarFactory.buildCar(CarType.GAS, ui.inputCarBrand(), ui.inputCarColor(), ui.inputNumCarSeats());
                     System.out.println(gas.toString());
                     break;
                 case 3:
-                    Car hybrid = CarFactory.buildCar(CarType.HYBRIDCAR, ui.inputCarBrand(), ui.inputCarColor(), ui.inputNumCarSeats());
+                    Car hybrid = CarFactory.buildCar(CarType.HYBRID, ui.inputCarBrand(), ui.inputCarColor(), ui.inputNumCarSeats());
                     System.out.println(hybrid.toString());
                     break;
                 case 4:

@@ -7,10 +7,10 @@ public class CarFactory {
             case ELECTRIC:
                 newCar = new ElectricCar(carBrand, carColor, carSeatNumber);
                 break;
-            case GASCAR:
+            case GAS:
                 newCar = new GasCar(carBrand, carColor, carSeatNumber);
                 break;
-            case HYBRIDCAR:
+            case HYBRID:
                 newCar = new HybridCar(carBrand, carColor, carSeatNumber);
                 break;
             default:

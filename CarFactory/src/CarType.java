@@ -1,5 +1,5 @@
 public enum CarType {
     ELECTRIC,
-    GASCAR,
-    HYBRIDCAR
+    GAS,
+    HYBRID
 }
