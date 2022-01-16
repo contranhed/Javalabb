@@ -1,9 +1,18 @@
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
         List<Person> persons = listOfPersons();
         System.out.println(persons);
+
+        // Find and print the name of best paid person
+        Optional<String> bestPaid = persons.stream()
+                .max(Comparator.comparing(Person::getSalary))
+                .map(Person::getName);
+        System.out.println("The best paid person is:");
+        bestPaid.ifPresent(System.out::println);
     }
 
     private static List<Person> listOfPersons() {
