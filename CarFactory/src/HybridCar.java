@@ -26,7 +26,7 @@ public class HybridCar implements Car {
 
     @Override
     public String toString() {
-        return "Congratulations! You have ordered a hybridCar with the following details: {" +
+        return "Congratulations! You have ordered a hybrid car with the following details: {" +
                 "carBrand='" + carBrand + '\'' +
                 ", carColor='" + carColor + '\'' +
                 ", carSeatNumber=" + carSeatNumber +
