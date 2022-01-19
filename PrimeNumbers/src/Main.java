@@ -6,12 +6,12 @@ import java.util.stream.IntStream;
 public class Main {
 
     public static void main(String[] args) {
-        MultipleThreads multiThreads = new MultipleThreads();
-        Thread firstThread = new Thread(multiThreads);
+        Thread firstThread = new Thread(new MultipleThreads(0, 350000));
+        Thread secondThread = new Thread(new MultipleThreads(350001, 500000));
         firstThread.start();
+        secondThread.start();
     }
-
-
+}
 
 /*
     // Check if the passed int is a prime number
@@ -41,5 +41,6 @@ public class Main {
                 .boxed()
                 .collect(Collectors.toList());
         System.out.println("All prime numbers between 350 001 and 500 000 are: " + secondHalfOfNumbers.apply(500000));
-    }*/
-}
+    }
+   */
+

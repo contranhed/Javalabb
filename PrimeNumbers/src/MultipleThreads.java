@@ -1,22 +1,28 @@
 import java.util.stream.IntStream;
 
 public class MultipleThreads implements Runnable {
+    final private int start;
+    final private int end;
+
+    public MultipleThreads(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
 
     @Override
     public void run() {
-        for (int i = 0; i <= 350000; i++) {
+        printNumber(start, end);
+    }
+
+    public void printNumber(int start, int end) {
+        for (int i = start; i <= end; i++) {
             if (isPrimeNumber(i)) {
-                System.out.println(i);
-            }
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println(Thread.currentThread().getName() + ": " + i);
             }
         }
     }
 
-    public boolean isPrimeNumber (int number) {
-        return IntStream.rangeClosed(2, number / 2).noneMatch(i-> number % i == 0);
+    public boolean isPrimeNumber(int number) {
+        return IntStream.rangeClosed(2, number / 2).noneMatch(i -> number % i == 0);
     }
 }
