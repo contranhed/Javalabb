@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         Predicate<String> regex = Pattern
-                .compile("(?i)[aoueiy][^ ]*[aoueiy](?i)")
+                .compile("(?i)[aoueiy][^ ]*[aoueiy]")
                 .asPredicate();
 
         List<String> javaWords = Arrays.asList(
