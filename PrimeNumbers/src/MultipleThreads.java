@@ -1,7 +1,7 @@
 import java.util.stream.IntStream;
 
 public class MultipleThreads implements Runnable {
-    final private int start;
+    private int start;
     final private int end;
 
     public MultipleThreads(int start, int end) {

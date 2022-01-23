@@ -4,7 +4,6 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         List<Person> persons = listOfPersons();
-        System.out.println(persons);
 
         // Print out average salary for males and females, respectively
         Map<String, Double> averageSalaryGenderBased = persons.stream()
